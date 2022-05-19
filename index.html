@@ -21,30 +21,41 @@
         <div class="container header">
     <a class="logo" href="">Web<span class="logo-color-top">Studio</span></a>
     <nav>
-         <ul class="site-nav">
-            <li class="site-nav__item"><a href="" class="site-nav__link site-nav__link--accent">Студия</a></li>
-            <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link">Портфолио</a></li>
-            <li class="site-nav__item"><a href="" class="site-nav__link">Контакты</a></li>
-         </ul>
+       <button type="button" class="menu-button">
+           <svg 
+                width="24"
+                height="18"
+                aria-label="Переключатель мобильного меня"
+                aria-controls="menu-container"
+                aria-expanded="false"
+            >
+               <use href="./images/symbol-defs.svg#icon-menu"></use>
+               <use href="./images/symbol-defs.svg#icon-cross"></use>
+           </svg>
+       </button>
+       <div class="menu-container" id="menu-container">
+            <div>
+                <ul class="site-nav">
+                    <li class="site-nav__item"><a href="" class="site-nav__link site-nav__link--accent">Студия</a></li>
+                    <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link">Портфолио</a></li>
+                    <li class="site-nav__item"><a href="" class="site-nav__link">Контакты</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul class="contacts-header">
+                    <li class="contacts-header__item "><a href="mailto:info@devstudio.com" class="contacts-header__style">
+                        <svg class="contacts-header__mail-icon">
+                            <use href="./images/symbol-defs.svg#icon-mail"></use>
+                        </svg>info@devstudio.com </a></li>
+                    <li class="contacts-header__item "><a href="tel:+380961111111" class="contacts-header__style">
+                        <svg class="contacts-header__phone-icon">
+                            <use href="./images/symbol-defs.svg#icon-phone"></use>
+                        </svg>+38 096 111 11 11 </a></li>
+                    </ul>
+            </div>
+       </div>
     </nav>
-        <ul class="contacts-header">
-            <li class="contacts-header__item ">
-                <a href="mailto:info@devstudio.com" class="contacts-header__style">
-                    <svg class="contacts-header__mail-icon">
-                        <use href="./images/symbol-defs.svg#icon-mail"></use>
-                    </svg>
-                    info@devstudio.com
-                </a> 
-            </li>
-            <li class="contacts-header__item ">
-                <a href="tel:+380961111111" class="contacts-header__style">
-                    <svg class="contacts-header__phone-icon">
-                        <use href="./images/symbol-defs.svg#icon-phone"></use>
-                    </svg>
-                    +38 096 111 11 11
-                </a>
-            </li>  
-        </ul>
+      
         </div>
         </section>
 </header>
@@ -316,42 +327,42 @@
             <div class="container">
             <h2 class="clients-list__tittle">Постоянные клиенты</h2>
             <ul class="clients-list">
-                <li>
+                <li class="clients-list__item">
                     <a href="" class="clients-list__link">
                         <svg class="clients-list__icon">
                             <use href="./images/symbol-defs.svg#icon-client1"></use>
                         </svg>
                     </a>
                 </li>
-                <li>
+                <li class="clients-list__item">
                     <a href="" class="clients-list__link">
                         <svg class="clients-list__icon">
                             <use href="./images/symbol-defs.svg#icon-client2"></use>
                         </svg>
                     </a>
                 </li>
-                <li>
+                <li class="clients-list__item">
                     <a href="" class="clients-list__link">
                         <svg class="clients-list__icon">
                             <use href="./images/symbol-defs.svg#icon-client3"></use>
                         </svg>
                     </a>
                 </li>
-                <li>
+                <li class="clients-list__item">
                     <a href="" class="clients-list__link">
                         <svg class="clients-list__icon">
                             <use href="./images/symbol-defs.svg#icon-client4"></use>
                         </svg>
                     </a>
                 </li>
-                <li>
+                <li class="clients-list__item">
                     <a href="" class="clients-list__link">
                         <svg class="clients-list__icon">
                             <use href="./images/symbol-defs.svg#icon-client5"></use>
                         </svg>
                     </a>
                 </li>
-                <li>
+                <li class="clients-list__item">
                     <a href="" class="clients-list__link">
                         <svg class="clients-list__icon">
                             <use href="./images/symbol-defs.svg#icon-client6"></use>
