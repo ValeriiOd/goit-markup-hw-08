@@ -3,33 +3,57 @@
     padding-top: 94px;
     padding-bottom: 94px;
 }
-.features-list{
+
+.features-list {
     list-style-type: none;
     padding-left: 0;
-    display: flex;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -15px;
+    }
 
     &__tittle {
         font-weight: 700;
         font-size: 14px;
         line-height: 1.14;
-        color: var(--main-color-text); 
+        color: var(--main-color-text);
         text-transform: uppercase;
         margin-bottom: 10px;
     }
+
     &__text {
         font-size: 14px;
         line-height: 1.7;
         color: var(--secondary-color-text);
     }
+
     &__item {
-        width: 270px;
         margin-right: 30px;
-    
+
+        @media screen and (min-width: 768px) {
+            width: calc((100% - 2 * 30px) / 2);
+            margin: 15px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            margin: 15px;
+            width: 270px;
+        }
     }
-    &__item:last-child{
-    margin-right: 0;
+
+    &__item:not(:last-child) {
+        @media screen and (max-width: 767px) {
+            margin-bottom: 30px;
+        }
     }
-    &__item::before{
+
+    &__item:last-child {
+        margin-right: 0;
+    }
+
+    &__item::before {
         display: block;
         content: '';
         height: 120px;
@@ -45,12 +69,35 @@
 .icon-details::before {
     background-image: url('../images/group1.svg');
 }
-.icon-time::before{
+
+.icon-time::before {
     background-image: url('../images/group2.svg');
 }
+
 .icon-plans::before {
     background-image: url('../images/group3.svg');
 }
-.icon-tech::before{
+
+.icon-tech::before {
     background-image: url('../images/group4.svg');
+}
+
+.our-work {
+    display: none;
+    padding-bottom: 94px;
+
+    @media screen and (min-width: 1200px) {
+        display: block;
+    }
+
+    &__tittle {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.16;
+        letter-spacing: 0.03em;
+        color: var(--main-color-text);
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
 }

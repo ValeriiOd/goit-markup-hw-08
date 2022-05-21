@@ -1,18 +1,18 @@
-
 :root {
-    --main-color-text: #212121;
-    --accent-color-text: #2196F3;
-    --secondary-color-text: #757575;
-    --additional-color: #ffffff;
-    --background-color: #2F303A ;
+   --main-color-text: #212121;
+   --accent-color-text: #2196F3;
+   --secondary-color-text: #757575;
+   --additional-color: #ffffff;
+   --background-color: #2F303A;
 }
 
 body {
    background-color: var(--additional-color);
-   color: var(--main-color-text) ;
+   color: var(--main-color-text);
    font-family: Roboto, sans-serif;
    letter-spacing: 0.03em;
 }
+
 h1,
 h2,
 h3,
@@ -24,10 +24,22 @@ ul {
    margin-top: 0;
    margin-bottom: 0;
 }
+
 .container {
-   width: 1200px;
    padding-left: 15px;
    padding-right: 15px;
    margin-left: auto;
    margin-right: auto;
+
+   @media screen and (min-width: 480px) {
+      width: 480px;
+   }
+
+   @media screen and (min-width: 768px) {
+      width: 768px;
+   }
+
+   @media screen and (min-width: 1200px) {
+      width: 1200px;
+   }
 }
