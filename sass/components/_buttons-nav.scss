@@ -1,9 +1,23 @@
+.main-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 .buttons {
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
     list-style: none;
     padding-left: 0;
+
+    @media screen and (max-width: 479px) {
+      flex-wrap: wrap;
+      justify-content: flex-start;
+    }
   }
   .buttons__item + .buttons__item {
     margin-left: 8px;

@@ -1,7 +1,11 @@
 .features {
-
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+    
 }
 
 .features-list {
@@ -80,24 +84,4 @@
 
 .icon-tech::before {
     background-image: url('../images/group4.svg');
-}
-
-.our-work {
-    display: none;
-    padding-bottom: 94px;
-
-    @media screen and (min-width: 1200px) {
-        display: block;
-    }
-
-    &__tittle {
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 1.16;
-        letter-spacing: 0.03em;
-        color: var(--main-color-text);
-        text-align: center;
-        margin-bottom: 50px;
-    }
-
 }

@@ -1,9 +1,12 @@
 .clients {
-    padding-top: 94px;
-    padding-bottom: 94px;
-
-}
-
+    padding-top: 60px;
+    padding-bottom: 60px;
+    
+     @media screen and (min-width: 1200px) {
+            padding-top: 94px;
+            padding-bottom: 94px;
+        }
+    }
 .clients-list {
     display: flex;
     list-style: none;
@@ -32,8 +35,6 @@
         display: flex;
         justify-content: center;
         color: #AFB1B8;
-        width: 170px;
-        height: 92px;
         border: 1px solid #AFB1B8;
         border-radius: 4px;
         padding: 16px 32px;
@@ -41,11 +42,16 @@
     }
 
     &__tittle {
-        font-weight: 700;
+        font-size: 28px;
+        line-height: 1.17;
+        text-align: center;
+        margin-bottom: 30px;
+
+    @media screen and (min-width: 1200px) {
         font-size: 36px;
         line-height: 1.16;
-        text-align: center;
         margin-bottom: 50px;
+         }    
     }
 
     &__icon {
@@ -61,10 +67,13 @@
     }
 
     &__item {
+        margin-left: auto;
+        margin-right: auto;
 
         @media screen and (max-width: 767px) {
             width: calc((100% - 2 * 30px) / 2);
             margin: 15px;
+            
         }
 
         @media screen and (min-width: 768px) {

@@ -4,6 +4,7 @@
     &__box {
         display: block;
         margin-bottom: 60px;
+        
     }
 
     &__style {
@@ -19,6 +20,7 @@
         @media screen and (min-width: 1200px) {
             display: flex;
             justify-content: space-between;
+            text-align: start;
          }
     }
 
@@ -109,10 +111,14 @@
         margin-right: auto;
     }
      @media screen and (min-width: 1200px) {
-        display: flex;
         margin: 0;
     }
-
+    & form {
+        @media screen and (min-width: 1200px) {
+            display: flex;
+            }
+        
+    }
     &__header {
 
         font-weight: 700;
@@ -154,7 +160,7 @@
             margin-right: auto;
         }
         @media screen and (min-width: 1200px) {
-            margin: 0;
+            margin-left: 12px;
         }
     }
     &__subscribe::after {
@@ -184,6 +190,7 @@
             width: 450px;
         }
         @media screen and (min-width: 1200px) {
+            display: block;
             width: 358px;
          }
     }

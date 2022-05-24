@@ -706,6 +706,7 @@ margin-right: 10px;
     color:var(--additional-color);
 }
 .form-footer__subscribe {
+    
     display: inline-flex;
     align-items: center;
 
