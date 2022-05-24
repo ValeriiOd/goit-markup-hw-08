@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,35 +17,63 @@
 </head>
 <body>
 <header class="header-border">
-        <section>
-            <div class="container header">
-            <a class="logo" href="">Web<span class="logo-color-top">Studio</span></a>
-            <nav>
-                <ul class="site-nav">
-                    <li class="site-nav__item"><a href="./index.html" class="site-nav__link ">Студия</a></li>
-                    <li class="site-nav__item"><a href="" class="site-nav__link site-nav__link--accent">Портфолио</a></li>
-                    <li class="site-nav__item"><a href="" class="site-nav__link">Контакты</a></li>
-                </ul>
-            </nav>
-            <ul class="contacts-header">
-              <li class="contacts-header__item ">
-                  <a href="mailto:info@devstudio.com" class="contacts-header__style">
-                      <svg class="contacts-header__mail-icon">
-                          <use href="./images/symbol-defs.svg#icon-mail"></use>
-                      </svg>
-                      info@devstudio.com
-                  </a> 
-              </li>
-              <li class="contacts-header__item ">
-                  <a href="tel:+380961111111" class="contacts-header__style">
-                      <svg class="contacts-header__phone-icon">
-                          <use href="./images/symbol-defs.svg#icon-phone"></use>
-                      </svg>
-                      +38 096 111 11 11
-                  </a>
-              </li>  
-            </ul>
-            </div>
+<section>
+     <div class="container header">
+     <a class="logo" href="">Web<span class="logo-color-top">Studio</span></a>
+    <nav> 
+<button type="button" class="menu-button" data-menu-button>
+  <svg 
+        width="24" 
+        height="18"
+        aria-label="Переключатель мобильного меня" 
+        aria-controls="menu-container"
+        aria-expanded="false"
+        >
+    <use class="icon-menu" href="./images/symbol-defs.svg#icon-menu"></use>
+    <use class="icon-cross" href="./images/symbol-defs.svg#icon-cross"></use>
+  </svg>
+</button>
+<div class="menu-container" data-menu id="menu-container">
+  <div>
+    <ul class="site-nav">
+      <li class="site-nav__item"><a href="./index.html" class="site-nav__link">Студия</a></li>
+      <li class="site-nav__item"><a href="" class="site-nav__link site-nav__link--accent">Портфолио</a></li>
+      <li class="site-nav__item"><a href="" class="site-nav__link">Контакты</a></li>
+    </ul>
+  </div>
+  <div>
+    <ul class="contacts-header">
+      <li class="contacts-header__item"><a href="mailto:info@devstudio.com"
+          class="contacts-header__style contacts-header__mail">
+          <svg class="contacts-header__mail-icon">
+            <use href="./images/symbol-defs.svg#icon-mail"></use>
+          </svg>info@devstudio.com </a></li>
+      <li class="contacts-header__item"><a href="tel:+380961111111"
+          class="contacts-header__style contacts-header__phone">
+          <svg class="contacts-header__phone-icon">
+            <use href="./images/symbol-defs.svg#icon-phone"></use>
+          </svg>+38 096 111 11 11 </a></li>
+    </ul>
+  </div>
+  <div>
+    <ul class="modal-socials">
+      <li class="modal-socials__item">
+        <a class="modal-socials__link" href="">Instagram</a>
+      </li>
+      <li class="modal-socials__item">
+        <a class="modal-socials__link" href="">Twitter</a>
+      </li>
+      <li class="modal-socials__item">
+        <a class="modal-socials__link" href="">Facebook</a>
+      </li>
+      <li class="modal-socials__item">
+        <a class="modal-socials__link" href="">Linkedin</a>
+      </li>
+    </ul>
+  </div>
+</div>
+ </nav>
+ </div>
         </section>
 </header>
     <main>
@@ -64,11 +91,18 @@
       <ul class="cards">
           <li class="cards__item"> 
           <div class="cards__box">
-              <img src="./images/img7.jpg" alt="" width="370">
+              <img
+              srcset="./images/img7.jpg 320w,
+                      ./images/img7x2.jpg 640w
+                      "
+
+              src="./images/img7.jpg" 
+              alt=""
+            sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw" >
                 <div class="cards__overlay">
                   <p>Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                 </div>
-                <div class="project-name">
+                <div class="cards__project-name">
                   <h2 class="cards__tittle">Технокряк</h2>
                   <p class="cards__categories">Веб-сайты</p>
                 </div>
@@ -76,19 +110,32 @@
           </li>
           <li class="cards__item">
             <div class="cards__box">
-              <img src="./images/img8.jpg" alt="" width="370">
+              <img
+              srcset="./images/img8.jpg 320w,
+                      ./images/img8x2.jpg 640w
+                      "
+              src="./images/img8.jpg" 
+              alt=""
+               sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw">
                 <div class="cards__overlay">
                 <p>Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                  </div>
             </div>
-              <div class="project-name">
-              <h2 class="cards__tittle">Постер New Orlean vs Golden Star</h2>
+              <div class="cards__project-name">
+              <h2 class="cards__tittle">Постер New Orlean vs Golden <br> Star</h2>
               <p class="cards__categories">Дизайн</p>
             </div>
         </li>
           <li class="cards__item">
             <div class="cards__box">
-              <img src="./images/img9.jpg" alt="" width="370">
+              <img
+              srcset="./images/img9.jpg 320w,
+                        ./images/img9x2.jpg 640w
+                        "
+
+              src="./images/img9.jpg" 
+              alt=""
+               sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw" >
                 <div class="cards__overlay">
                 <p>Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                  </div>
@@ -100,7 +147,13 @@
         </li>
           <li class="cards__item">
             <div class="cards__box">
-              <img src="./images/img10.jpg" alt="" width="370">
+              <img
+              srcset="./images/img10.jpg 320w,
+                        ./images/img10x2.jpg 640w
+                        "
+              src="./images/img10.jpg" 
+              alt=""
+               sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw" >
                 <div class="cards__overlay">
                 <p>Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                  </div>
@@ -111,7 +164,13 @@
             </div>
           <li class="cards__item">
             <div class="cards__box">
-              <img src="./images/img11.jpg" alt="" width="370">
+              <img
+              srcset="./images/img11.jpg 320w,
+                        ./images/img11x2.jpg 640w"
+
+              src="./images/img11.jpg" 
+              alt=""
+               sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw" >
                 <div class="cards__overlay">
                 <p>Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                  </div>
@@ -123,7 +182,13 @@
         </li>
           <li class="cards__item">
             <div class="cards__box">
-              <img src="./images/img12.jpg" alt="" width="370">
+              <img
+              srcset="./images/img12.jpg 320w,
+                      ./images/img12x2.jpg 640w
+                      "
+              src="./images/img12.jpg" 
+              alt=""
+               sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw" >
                 <div class="cards__overlay">
                 <p>Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                  </div>
@@ -135,7 +200,14 @@
         </li>
           <li class="cards__item">
             <div class="cards__box">
-              <img src="./images/img13.jpg" alt="" width="370">
+              <img
+              srcset="./images/img13.jpg 320w,
+                      ./images/img13x2.jpg 640w
+                      " 
+
+              src="./images/img13.jpg" 
+              alt=""
+               sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw" >
                 <div class="cards__overlay">
                 <p>Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                  </div>
@@ -147,7 +219,13 @@
         </li>
           <li class="cards__item">
             <div class="cards__box">
-              <img src="./images/img14.jpg" alt="" width="370">
+              <img
+              srcset="./images/img14.jpg 320w,
+                      ./images/img14x2.jpg 640w
+                        "
+              src="./images/img14.jpg" 
+              alt=""
+               sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw" >
                 <div class="cards__overlay">
                 <p>Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                  </div>
@@ -159,7 +237,13 @@
         </li>
           <li class="cards__item">
             <div class="cards__box">
-            <img src="./images/img15.jpg" alt="" width="370">
+            <img
+            srcset="./images/img15.jpg 320w,
+                    ./images/img15x2.jpg 640w
+                    "
+            src="./images/img15.jpg" 
+            alt=""
+             sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw" >
               <div class="cards__overlay">
                 <p>Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                  </div>
@@ -227,6 +311,7 @@
           </div>
       </section>
       </footer>
+      <script src="./js/menu.js"></script>
 </body>
 
 </html>

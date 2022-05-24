@@ -17,11 +17,11 @@
 </head>
 <body>
     <header>
-    <section>
+    <section role="navigation">
         <div class="container header">
     <a class="logo" href="">Web<span class="logo-color-top">Studio</span></a>
     <nav>
-       <button type="button" class="menu-button">
+       <button type="button" class="menu-button" data-menu-button>
            <svg 
                 width="24"
                 height="18"
@@ -33,7 +33,7 @@
                <use class="icon-cross" href="./images/symbol-defs.svg#icon-cross"></use>
            </svg>
        </button>
-       <div class="menu-container" id="menu-container">
+       <div class="menu-container" data-menu id="menu-container" >
             <div>
                 <ul class="site-nav">
                     <li class="site-nav__item"><a href="" class="site-nav__link site-nav__link--accent">Студия</a></li>
@@ -189,7 +189,14 @@
             <h2 class="team__header">Наша команда</h2>
             <ul class="team-box">
                 <li class="team-box__item">
-                    <img src="./images/img3.jpg" alt="фото члена команды" width="270">
+                    <img 
+                    srcset="
+                    ./images/img3.jpg 270w,
+                    ./images/img3x2.jpg 540w
+                    "
+                    src="./images/img3.jpg" 
+                    alt="фото члена команды" 
+                    sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw">
                 <div class="team-box__description">
                     <h3 class="team-box__tittle">Игорь Демьяненко</h3>
                     <p lang="en" class="team-box__text">Product Designer</p>
@@ -226,7 +233,13 @@
                 </div>
                 </li>
                 <li class="team-box__item">
-                    <img src="./images/img4.jpg" alt="фото члена команды" width="270">
+                    <img 
+                    srcset="/images/img4.jpg 270w,
+                            /images/img4x2.jpg 540w
+                            "
+                    src="./images/img4.jpg" 
+                    alt="фото члена команды" 
+                    sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw">
                 <div class="team-box__description">
                     <h3 class="team-box__tittle">Ольга Репина</h3>
                     <p lang="en" class="team-box__text">Frontend Developer</p>
@@ -263,7 +276,13 @@
                 </div>
                 </li>
                 <li class="team-box__item">
-                    <img src="./images/img5.jpg" alt="фото члена команды" width="270">
+                    <img 
+                    srcset="./images/img5.jpg 270w,
+                            ./images/img5x2.jpg 540w
+                            "
+                    src="./images/img5.jpg" 
+                    alt="фото члена команды"
+                    sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw">
                 <div class="team-box__description">
                     <h3 class="team-box__tittle">Николай Тарасов</h3>
                     <p lang="en" class="team-box__text">Marketing</p>
@@ -300,7 +319,13 @@
                 </div> 
                 </li>
                 <li class="team-box__item">
-                    <img src="./images/img6.jpg" alt="фото члена команды" width="270">
+                    <img 
+                    srcset="./images/img6.jpg 270w,
+                            ./images/img6x2.jpg 540w
+                    "
+                    src="./images/img6.jpg" 
+                    alt="фото члена команды" 
+                    sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw">
                 <div class="team-box__description">
                     <h3 class="team-box__tittle">Михаил Ермаков</h3>
                     <p lang="en" class="team-box__text">UI Designer</p>
@@ -334,9 +359,9 @@
                         </a>
                         </li>
                         </ul>
-                    </ul>    
-                </div> 
-        </div> 
+                    </div>
+                </ul>    
+            </div> 
         </section>
         <section class="clients">
             <div class="container">
@@ -443,5 +468,6 @@
     </section>
     </footer>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 </html>
