@@ -8,6 +8,7 @@
         justify-content: space-between;
         padding-top: 16px;
         padding-bottom: 16px;
+        position: inherit;
     }
 
     @media screen and (max-width: 1199px) {
@@ -60,6 +61,7 @@
 
 .menu-button.is-open .icon-cross {
     display: block;
+    position: absolute;
 }
 
 .menu-button.is-open .icon-menu {
@@ -79,17 +81,15 @@
     }
 
     @media screen and (max-width: 767px) {
-        display: none;
         flex-direction: column;
         position: absolute;
-        top: 100%;
+        top: 0;
         left: 0;
         width: 100%;
         padding: 48px 40px;
     }
 
     @media screen and (min-width: 768px) {
-        position: relative;
         display: flex;
         align-items: center;
     }
@@ -172,6 +172,9 @@
             height: 10px;
             margin-right: 8px;
         }
+        @media screen and (max-width: 767px) {
+           display: none;
+        }
     }
 
     &__phone-icon {
@@ -184,6 +187,9 @@
             width: 10px;
             height: 14px;
             margin-right: 8px;
+        }
+         @media screen and (max-width: 767px) {
+            display: none;
         }
     }
     &__item:last-child {
