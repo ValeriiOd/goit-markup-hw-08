@@ -38,6 +38,9 @@
 }
 
 .menu-button {
+    top: 15px;
+    position: absolute;
+    z-index: 2;
     display: block;
     width: 40px;
     height: 40px;
@@ -61,7 +64,6 @@
 
 .menu-button.is-open .icon-cross {
     display: block;
-    position: absolute;
 }
 
 .menu-button.is-open .icon-menu {
@@ -71,8 +73,6 @@
 .menu-container {
     position: absolute;
     display: none;
-    top: 100%;
-    left: 0;
     background: var(--additional-color);  
 
     &.is-open {
@@ -90,6 +90,7 @@
     }
 
     @media screen and (min-width: 768px) {
+        position: relative;
         display: flex;
         align-items: center;
     }
