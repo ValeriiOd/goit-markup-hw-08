@@ -4,7 +4,9 @@
     &__box {
         display: block;
         margin-bottom: 60px;
-        
+        @media screen and (min-width: 1200px) {
+                margin: 0;
+            }
     }
 
     &__style {
@@ -14,7 +16,7 @@
 
         @media screen and (min-width: 768px) {
             display: flex;
-            justify-content: space-between;
+            justify-content: space-around;
             flex-wrap: wrap;
         }
         @media screen and (min-width: 1200px) {
@@ -138,27 +140,24 @@
         font-size: 16px;
         line-height: 1.9;
         letter-spacing: 0.06em;
-        align-items: center;
         text-align: center;
+        font-weight: 700;
 
         width: 200px;
         height: 50px;
         padding: 10px 28px;
         border-width: 0;
+                    margin-left: auto;
+                        margin-right: auto;
 
         background: var(--accent-color-text);
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
         border-radius: 4px;
-        margin-left: 12px;
 
         color: var(--additional-color);
         text-decoration: none;
         cursor: pointer;
-
-        @media screen and (min-width: 480px) {
-            margin-left: auto;
-            margin-right: auto;
-        }
+        
         @media screen and (min-width: 1200px) {
             margin-left: 12px;
         }

@@ -31,20 +31,21 @@
     border-top: transparent;
 }
 &__item{
-
     background: var(--additional-color);
          @media screen and (min-width: 768px) {
 
              width: calc((100% - 2 * 30px) / 2);
              margin: 15px;
          } 
-                  @media screen and (min-width: 1200px) {
-        
-                      width: calc((100% - 3 * 30px) / 3);
-                      margin: 15px;
-                  }
+        @media screen and (min-width: 1200px) {
+        width: calc((100% - 3 * 30px) / 3);
+        margin: 15px;
+        }
     
     box-sizing: border-box;
+}
+&__item:not(:last-child) {
+    margin-bottom: 30px;
 }
 &__box {
     position: relative;
