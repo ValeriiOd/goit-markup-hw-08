@@ -11,8 +11,9 @@ body {
    color: var(--main-color-text);
    font-family: Roboto, sans-serif;
    letter-spacing: 0.03em;
+   overflow-x: hidden;
 }
-
+ 
 h1,
 h2,
 h3,

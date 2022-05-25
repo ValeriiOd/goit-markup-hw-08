@@ -10,13 +10,16 @@
 .buttons {
     display: flex;
     justify-content: center;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     list-style: none;
     padding-left: 0;
 
     @media screen and (max-width: 767px) {
       flex-wrap: wrap;
       justify-content: flex-start;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 50px;
     }
   }
   .buttons__item:not(:last-child) {
